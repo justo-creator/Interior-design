@@ -16,6 +16,8 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     gap: 20px;
+    width: 100%;
+    margin: 0;
 }
 
 .header-container {
@@ -63,10 +65,12 @@ body {
 }
 
 .main-container {
-    margin: 40px 350px; 
+    margin-left: 350px; 
     padding: 20px;
-    z-index: 2;
+   min-width: 600px;
 }
+
+
 
 .main-container .title h1{
     font-size: 4rem;
@@ -90,6 +94,7 @@ body {
     flex: 0 1 200px;
     width: 100%;
     height: 100%;
+    opacity: .5;
     object-fit: cover;
     border-radius: 3px;
     transition: transform 0.3s ease-in-out;
@@ -97,7 +102,7 @@ body {
 }
 
 .main-container .img-container img:hover {
-    transform: scale(1.1);
+    opacity: 1;
 }
 
  strong{
