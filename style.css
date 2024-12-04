@@ -22,7 +22,7 @@ body {
 
 .header-container {
     background-color: #f44336;
-    width: 300px; /* Asegúrate de mantener este valor fijo */
+    min-width: 300px; /* Asegúrate de mantener este valor fijo */
     height: 100vh;
     position: fixed; /* Permite que permanezca en el lado izquierdo */
     display: flex;
@@ -85,13 +85,13 @@ body {
 .main-container .img-container {
     margin-top: 30PX;
     display: grid;
-    grid-template-columns: auto auto;
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     flex-wrap: wrap;
+    gap: 20px;
+   
 }
 
 .main-container .img-container img {
-    flex: 0 1 200px;
     width: 100%;
     height: 100%;
     opacity: .5;
@@ -125,7 +125,7 @@ body {
 
 .team{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
     margin: 40px 0;
 }
